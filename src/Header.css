@@ -1,0 +1,63 @@
+.NaviBack {
+  width: 100%;
+  background-color: #0047AB;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.TopBar {
+  display: flex;
+  justify-content: space-between; /* Logo left, admin icon right */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Logo {
+  width: 120px;
+  height: 120px;
+}
+
+.AdminIcon {
+  width: 80px;
+  height: 80px;
+}
+.NewBar p {
+width:100px;
+height:30px;
+background-color:#D2691E;
+color:white;
+font-size:15px;
+font-weight:bold;
+border:none;
+border-radius:24px;
+text-align:center;
+padding:5px;
+
+
+     }
+
+.NaviBar {
+  display: flex;
+  margin-left:800px; /* center the nav links horizontally */
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.NaviBar li a {
+  font-size: 21px;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.NaviBar li a:hover {
+  text-decoration: underline;
+}
+
+.NewBar {
+  display:flex;
+  flex-direction:row;
+  gap:5px;
+}

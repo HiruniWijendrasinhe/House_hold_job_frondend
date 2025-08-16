@@ -1,0 +1,61 @@
+.footer-horizontal{
+ display:flex;
+ flex-direction:row;
+ margin-left:260px;
+ gap:50px;
+ }
+ .horizontal-division{
+display:flex;
+ flex-direction:row;
+ gap:2px;
+
+   }
+  .footer-vertical{
+   display:flex;
+    flex-direction:column;
+    gap:20px;
+
+      }
+  .footer-vertical p{
+  font-family:Arial, sans-serif;
+      color:white;
+      text-align:center;
+
+   }
+  h1{  font-size:30px;
+      font-family:Arial, sans-serif;
+          color:white;
+          text-align:center;
+
+       }
+  .footer-horizontal  h3{  font-size:20px;
+        font-family:Arial, sans-serif;
+            color:white;
+            text-align:center;
+        text-decoration:underline;
+         }
+    .site-footer
+    {
+      background-color:#0047AB;
+
+      }
+     img
+         {
+           width:40px;
+           height:40px;
+
+
+          }
+     .footer-vertical li
+         {  font-size:18px;
+            color:white;
+            margin-bottom:10px;
+
+
+         }
+    #format  {
+
+      width:300px;
+      height:300px;
+      align:center;
+                     }

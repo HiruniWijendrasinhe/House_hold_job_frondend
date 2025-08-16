@@ -1,0 +1,77 @@
+.Container{
+   display:flex;
+   flex-direction:column;
+          }
+
+
+
+.button {
+  width:150px;
+  height:50px;
+  padding: 8px;
+  background-color:blue;
+  font-size:20px;
+  color:white;
+  font-weight:bold;
+}
+.profiles-container {
+  padding: 20px;
+}
+
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;        /* allow wrapping to next row */
+  gap: 80px;              /* space between cards */
+  justify-content: flex-start;
+   margin-left:170px;/* optional: align left */
+}
+
+
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #aaa;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-info label {
+  font-weight: bold;
+  display: block;
+}
+
+.profile-info span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction:row;
+  gap:20px;
+  margin-top: 20px;
+}
+.profile-set {
+  display: flex;
+  flex-direction:row;
+  gap: 10px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+

@@ -1,0 +1,120 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import DefauProfile from './Pictures/DefauProfile.png';
+import Header from './Header';
+import Footer from './Footer';
+import Admincurd from './Admincurd';
+import './AdminAdd.css';
+
+function AdminAdd({ show, onClose, onLogin }) {
+
+
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
+  const [address, setAddress] = useState("");
+  const [phoneNo, setPhoneNo] = useState("");
+  const navigate = useNavigate();
+   //if (!show) return null;
+const Back_End_URL=process.env.REACT_APP_BACKEND_URL||'http://localhost:8000';
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+    console.log("Sending  data:", { name,age,address,phoneNo });
+      const res = await axios.post(`${Back_End_URL}/api/auth/admin-add`, {
+        name,
+        age,
+        address,
+        phoneNo
+      });
+      console.log("Successful Adding:", res.data);
+      navigate("/admin-crud");
+    } catch (err) {
+      console.error("Adding failed:", err.response ? err.response.data : err);
+      alert("Adding failed. Try again.");
+    }
+  };
+
+  const handleCancel = () => {
+        navigate("/admin-crud");
+      };
+
+  return (
+  <>
+  <Admincurd/>
+
+    <div className="backdrop">
+      <div className="modal">
+        <h3>Add Profile</h3>
+        <div className="NewClz">
+       <img id="IMG1" src={DefauProfile} alt="profile icon" />
+        <form onSubmit={handleSubmit}>
+        <label>
+        Name
+
+          <input
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            className="input"
+          />
+          </label>
+
+          <label>
+          Age
+
+          <input
+            type="number"
+            placeholder="Age"
+            value={age}
+            onChange={(e) => setAge(e.target.value)}
+            required
+            className="input"
+          />
+          </label>
+
+          <label>Address:
+
+
+          <textarea
+
+                     placeholder="Address"
+                     value={address}
+                     onChange={(e) => setAddress(e.target.value)}
+                     required
+                     className="input"
+                         > </textarea>
+          </label>
+
+          <label>
+                  Phone NO:
+
+          <input
+                      type="tel"
+                      placeholder="PhoneNo"
+                      value={phoneNo}
+                      onChange={(e) => setPhoneNo(e.target.value)}
+                      required
+                      className="input"
+                    />
+          </label>
+
+          <button type="submit" className="buttonX">
+            Add
+          </button>
+          <button type="button" onClick={handleCancel} className="buttonX">
+            Cancel
+          </button>
+
+        </form>
+      </div>
+    </div>
+    </div>
+
+</>
+  );
+}
+
+export default AdminAdd;

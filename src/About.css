@@ -1,0 +1,96 @@
+.FlowFormat{
+display:flex;
+flex-direction:column;
+gap:10px;
+
+       }
+
+.BackgroundContainer{
+position:relative;
+min-height:100vh;
+background-image: url('./Pictures/AboutBackground.jpg');
+background-size:cover;
+background-position:center;
+justify-content:center;
+align-items:center;
+display:flex;
+color:white;
+text-align:center;
+  }
+
+.HomeQuote{
+
+background-color:rgba(0, 0, 0, 0.5);
+padding:10px;
+
+  }
+
+  .HomeQuote p{
+  font-size:25px;
+   color:white;
+   font-weight:bold;
+
+  padding:10px;
+
+    }
+
+
+
+ #Second{
+ font-size:20px;
+ color:black;
+ text-align:center;
+
+     }
+
+
+ .FlowFormat h1{
+ font-size:24px;
+ color:black;
+ font-weight:bold;
+ text-align:center;
+
+     }
+.GoNext{
+display:flex;
+flex-direction:row;
+
+justify-content:center;
+gap:0px;
+
+         }
+
+.GoNext img{
+width:65px;
+height:65px;
+
+
+
+         }
+
+.FlowFormat p{
+font-size:20px;
+text-align:center;
+
+         }
+  .Unorder {
+    display: inline-block;   /* shrink-wrap list to content width */
+    text-align: justify;     /* justify text inside */
+  }
+
+
+.Unorder li {font-size:20px;
+      color:black;
+      list-style-type:disc;
+      list-style-position: inside;
+      text-align:justify;
+      margin-left:500px;
+     }
+
+.Offers img{width:400px;
+height:400px;
+                }
+
+.Offers{display:flex;
+   flex-direction:row;
+    gap:60px;        }

@@ -1,0 +1,85 @@
+.FlowFormat1{
+  display:flex;
+  flex:1;
+  flex-direction:row;
+  gap:30px;
+  margin:20px;
+             }
+  .FlowFormat1 > * {
+    flex: 1;
+  }
+
+
+.Container{
+display:flex;
+flex-direction:column;
+ margin-bottom:20px;           }
+
+.FlowFormat1 img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border:none;
+    border-radius: 10px;           }
+
+
+h1{
+font-size:35px;
+font-weight:bold;
+color:black;
+margin-bottom:10px;}
+
+#ABC{
+      background-color:#0047AB;
+      width:200px;
+      height:30px;
+      padding:10px;
+      color:white;
+      font-size:20px;
+      font-weight:medium;
+      text-align:center;
+      margin-left:50px;
+      border:none;
+      border-radius:24px;
+
+      }
+ .Details{
+  display:flex;
+  flex-direction:row;
+  gap:10px;
+          }
+ .FlowFormatNext #IMG1 {
+ width: 50px;
+height: 50px;
+margin-top:20px;
+
+                }
+.FlowFormatNext h3{
+font-size:30px;
+font-weight:bold;
+color:black;
+margin-bottom:10px;
+
+               }
+ #IMG2 {
+  width: 70px;
+ height: 70px;
+
+         }
+
+.FlowFormatNext
+{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:20px;
+
+         }
+#Normal{
+
+  color:black;
+  font-size:20px;
+  font-weight:medium;
+  margin:20px;
+  text-align:justify
+                        }
