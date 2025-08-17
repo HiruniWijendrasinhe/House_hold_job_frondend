@@ -13,7 +13,7 @@ function AdminUpdate() {
 
   const navigate = useNavigate();
   const { id } = useParams();
-const Back_End_URL=process.env.REACT_APP_BACKEND_URL||'http://localhost:8000';
+const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
     const fetchData = async () => {

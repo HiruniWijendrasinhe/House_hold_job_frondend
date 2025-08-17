@@ -13,7 +13,7 @@ function ClientDisplay() {
     const interval = setInterval(fetchProfiles, 5000);
         return () => clearInterval(interval);
   }, []);
-    const Back_End_URL=process.env.REACT_APP_BACKEND_URL||'http://localhost:8000';
+    const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
   const fetchProfiles = async () => {
     try {
       const res = await axios.get(`${Back_End_URL}/api/auth/admin-display`);

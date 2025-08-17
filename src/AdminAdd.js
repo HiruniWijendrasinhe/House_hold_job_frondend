@@ -16,7 +16,7 @@ function AdminAdd({ show, onClose, onLogin }) {
   const [phoneNo, setPhoneNo] = useState("");
   const navigate = useNavigate();
    //if (!show) return null;
-const Back_End_URL=process.env.REACT_APP_BACKEND_URL||'http://localhost:8000';
+const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

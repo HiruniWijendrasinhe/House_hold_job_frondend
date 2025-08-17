@@ -9,7 +9,7 @@ function SignUp() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
- const Back_End_URL=process.env.REACT_APP_BACKEND_URL||'http://localhost:8000';
+ const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
