@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Header from './Header';
+import PropTypes from 'prop-types';
 import Home from './Home';
 import './SingUp.css';
 
@@ -54,6 +54,7 @@ function SignUp() {
               required
               className="input"
             />
+
             <button type="submit" className="button">
               SignUp
             </button>
@@ -66,5 +67,10 @@ function SignUp() {
     </>
   );
 }
+SingUp.propTypes = {
+  show: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  onLogin: PropTypes.func
+};
 
 export default SignUp;

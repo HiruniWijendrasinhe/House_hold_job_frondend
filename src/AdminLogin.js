@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Header from './Header';
-import Footer from './Footer';
+import PropTypes from 'prop-types';
 import Home from './Home';
 import './AdminLogin.css';
 
@@ -73,5 +72,8 @@ const handleCancel = () => {
 
     </>
   );
+  AdminLogin.propTypes = {
+    setUserRole: PropTypes.func.isRequired // Validates the actual prop being used
+  };
 }
 export default AdminLogin;

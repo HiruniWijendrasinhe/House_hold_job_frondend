@@ -6,6 +6,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Admincurd from './Admincurd';
 import './AdminAdd.css';
+import PropTypes from 'prop-types';
 
 function AdminAdd({ show, onClose, onLogin }) {
 
@@ -51,8 +52,7 @@ const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
         <form onSubmit={handleSubmit}>
         <label>
         Name
-
-          <input
+         <input
             type="text"
             placeholder="Name"
             value={name}
@@ -61,11 +61,9 @@ const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
             className="input"
           />
           </label>
-
           <label>
           Age
-
-          <input
+           <input
             type="number"
             placeholder="Age"
             value={age}
@@ -74,24 +72,19 @@ const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
             className="input"
           />
           </label>
-
-          <label>Address:
-
-
+          <label>
+          Address:
           <textarea
-
-                     placeholder="Address"
+                    placeholder="Address"
                      value={address}
                      onChange={(e) => setAddress(e.target.value)}
                      required
                      className="input"
                          > </textarea>
           </label>
-
-          <label>
+            <label>
                   Phone NO:
-
-          <input
+               <input
                       type="tel"
                       placeholder="PhoneNo"
                       value={phoneNo}
@@ -100,6 +93,7 @@ const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
                       className="input"
                     />
           </label>
+
 
           <button type="submit" className="buttonX">
             Add
@@ -116,5 +110,10 @@ const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
 </>
   );
 }
+AdminAdd.propTypes = {
+  show: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  onLogin: PropTypes.func
+};
 
 export default AdminAdd;

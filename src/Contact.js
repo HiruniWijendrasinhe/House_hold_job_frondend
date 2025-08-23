@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
+
 import LinkedinContactNew  from './Pictures/LinkedinContactNew.png';
 import FaceBookContactx from './Pictures/FaceBookContactx.png';
 import TwitterLogox from './Pictures/TwitterLogox.png';

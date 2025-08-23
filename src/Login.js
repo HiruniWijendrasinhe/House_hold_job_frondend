@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Header from './Header';
-import Footer from './Footer';
+
 import Home from './Home';
 import './Login.css';
+import PropTypes from 'prop-types';
 
 function Login({ show, onClose, onLogin }) {
 
@@ -47,7 +47,7 @@ function Login({ show, onClose, onLogin }) {
       <div className="modal">
         <h3>Login</h3>
         <form onSubmit={handleSubmit}>
-          <input
+         <input
             type="text"
             placeholder="Username"
             value={username}
@@ -55,7 +55,7 @@ function Login({ show, onClose, onLogin }) {
             required
             className="input"
           />
-          <input
+         <input
             type="password"
             placeholder="Password"
             value={password}
@@ -63,6 +63,7 @@ function Login({ show, onClose, onLogin }) {
             required
             className="input"
           />
+
           <div className="formatnew">
           <button type="submit" className="button">
             Login
@@ -78,5 +79,10 @@ function Login({ show, onClose, onLogin }) {
 </>
   );
 }
+Login.propTypes = {
+  show: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  onLogin: PropTypes.func
+};
 
 export default Login;

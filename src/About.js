@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
+
 import AboutBackground from './Pictures/AboutBackground.jpg'
 import targetnew from './Pictures/targetnew.png'
 import AboutPlan from './Pictures/AboutPlan.jpg'

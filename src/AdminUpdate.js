@@ -4,6 +4,7 @@ import axios from "axios";
 import DefauProfile from './Pictures/DefauProfile.png';
 import Admincurd from './Admincurd';
 import './AdminUpdate.css';
+import PropTypes from 'prop-types';
 
 function AdminUpdate() {
   const [name, setName] = useState("");
@@ -72,7 +73,6 @@ const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
                   className="input"
                 />
               </label>
-
               <label>Age
                 <input
                   type="number"
@@ -83,8 +83,7 @@ const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
                   className="input"
                 />
               </label>
-
-              <label>Address
+               <label>Address
                 <textarea
                   placeholder="Address"
                   value={address}
@@ -93,8 +92,7 @@ const Back_End_URL=process.env.REACT_APP_BACKEND_URL;
                   className="input"
                 />
               </label>
-
-              <label>Phone No
+               <label>Phone No
                 <input
                   type="tel"
                   placeholder="PhoneNo"
