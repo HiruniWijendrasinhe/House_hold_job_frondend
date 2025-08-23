@@ -35,6 +35,9 @@ function AdminLogin({ setUserRole }) {
 const handleCancel = () => {
     navigate("/");
   };
+  AdminLogin.propTypes = {
+      setUserRole: PropTypes.func.isRequired // Validates the actual prop being used
+    };
   return (
   <>
         <Home />
@@ -72,8 +75,6 @@ const handleCancel = () => {
 
     </>
   );
-  AdminLogin.propTypes = {
-    setUserRole: PropTypes.func.isRequired // Validates the actual prop being used
-  };
+
 }
 export default AdminLogin;
